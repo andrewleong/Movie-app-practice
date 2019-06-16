@@ -31,12 +31,14 @@ class Home extends Component {
     }
 
     render() {
+        const { movies } = this.state;
         return (
             <div>
                 <SearchBar
                     onSearch={this.handleSearch}
                 />
                 <MovieList
+                    movieList={movies}
                 />
             </div>
         );
