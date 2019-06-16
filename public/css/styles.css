@@ -36,6 +36,7 @@ input#search-bar {
 
 .modal h3, .modal h4 {
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .card-img-top {
