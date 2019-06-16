@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Container) Home should display a message if there are no movies 1`] = `
+Object {
+  "children": Array [
+    <SearchBar
+      onSearch={[Function]}
+    />,
+    <h1>
+      Please do a search.
+    </h1>,
+  ],
+  "className": "container",
+}
+`;
+
+exports[`(Container) Home should render a <MovieList /> if movies are found 1`] = `
+Object {
+  "children": Array [
+    <SearchBar
+      onSearch={[Function]}
+    />,
+    <MovieList
+      movieList={
+        Array [
+          Object {
+            "id": 1,
+            "name": "movie 1",
+          },
+        ]
+      }
+    />,
+  ],
+  "className": "container",
+}
+`;
+
+exports[`(Container) Home should render a <SearchBar /> 1`] = `
+Object {
+  "children": Array [
+    <SearchBar
+      onSearch={[Function]}
+    />,
+    <h1>
+      Please do a search.
+    </h1>,
+  ],
+  "className": "container",
+}
+`;
