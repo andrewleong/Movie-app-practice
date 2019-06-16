@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
 
+const API_SITE = process.env.REACT_APP_API_SITE;
+const API_KEY = process.env.REACT_APP_API_KEY;
+const API_IMAGE = process.env.REACT_APP_API_IMAGE;
+
 class MovieDetails extends Component {
     constructor(props) {
         super(props);
         this.state = {
             movie: {}
         }
+    }
+
+    componentDidMount(){
+        fetch(`${API_SITE}movie/${this.props.movieDetails.id}?api_key=${API_KEY}`)
+        .then((response) => response.json())
+        .then((results) => {
+            this.setState({
+                movie: results
+            })
+        });
     }
 
     render() {
@@ -23,13 +37,14 @@ class MovieDetails extends Component {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Releases on {movie.release_date}</h5>
+                            <h5 className="modal-title" id="exampleModalLabel">Release date: {movie.release_date}</h5>
                             <button type="button" className="close" data-dismiss="modal" onClick={this.props.toggleModal} aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div className="modal-body">
                             <div className="card">
+                                <img className="card-img-top" src={`${API_IMAGE}w500/${movie.poster_path}`} alt="" />
                                 <div className="card-img-overlay white">
                                     <h3 className="card-title">{movie.title ? movie.title : 'N/A'}</h3>
                                     <h4 className="card-subtitle"><span style={{color:"#fbb829"}}>IMDB</span> ratings: {movie.vote_average}</h4>
