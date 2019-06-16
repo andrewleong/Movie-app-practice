@@ -42,6 +42,10 @@ p.card-text {
     color: #fff;
 }
 
+.movie-list-container {
+    margin: 0 auto;
+}
+
 .movie-item-container img {
     max-width: 280px;
 }
