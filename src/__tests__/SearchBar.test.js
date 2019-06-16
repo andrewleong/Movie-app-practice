@@ -27,6 +27,7 @@ describe('(Component) Search Bar', () => {
 
         wrapper.find('#search-bar').simulate('change', null, value)
         expect(mockFn).toBeCalledWith(null, value);
+        expect(wrapper.props()).toMatchSnapshot();
     })
 
     it('should be able to click search button', () => {
@@ -39,6 +40,7 @@ describe('(Component) Search Bar', () => {
 
         wrapper.find('button').simulate('click')
         expect(mockFn).toHaveBeenCalled();
+        expect(wrapper.props()).toMatchSnapshot();
     })
 
 });

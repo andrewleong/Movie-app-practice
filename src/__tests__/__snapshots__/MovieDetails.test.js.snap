@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) MovieDetails should render a modal of movie details correctly 1`] = `
+Object {
+  "movie": Object {
+    "id": 122,
+    "release_date": "12-12-2019",
+    "title": "movie 1",
+  },
+}
+`;

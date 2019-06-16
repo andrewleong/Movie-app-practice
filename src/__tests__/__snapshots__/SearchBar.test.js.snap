@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Search Bar should be able to click search button 1`] = `
+Object {
+  "children": Array [
+    <input
+      id="search-bar"
+      placeholder="Search Movies"
+      type="text"
+    />,
+    <button
+      className="btn btn-primary"
+      onClick={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      type="button"
+    >
+      Search
+    </button>,
+  ],
+  "className": "search-bar",
+}
+`;
+
+exports[`(Component) Search Bar should call onQueryChange while typing 1`] = `
+Object {
+  "children": Array [
+    <input
+      id="search-bar"
+      onChange={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              null,
+              "inception",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        }
+      }
+      placeholder="Search Movies"
+      type="text"
+    />,
+    <button
+      className="btn btn-primary"
+      type="button"
+    >
+      Search
+    </button>,
+  ],
+  "className": "search-bar",
+}
+`;
