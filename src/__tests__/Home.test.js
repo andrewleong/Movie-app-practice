@@ -23,4 +23,11 @@ describe('(Container) Home', () => {
         wrapper.setState({ movies })
         expect(wrapper.find('MovieList')).toHaveLength(1);
     });
+
+    it('should display a message if there are no movies', () => {
+        const movies = []
+        wrapper.setState({ movies })
+        expect(wrapper.find('h1').text()).toEqual("Please do a search.");
+    });
+
 });
