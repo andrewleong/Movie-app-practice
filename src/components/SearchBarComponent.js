@@ -3,7 +3,7 @@ import React from 'react';
 const SearchBarComponent = ({ onQueryChange }) => {
     return (
         <div>
-            <input onChange={onQueryChange} type="text" placeholder="Search Movies" />
+            <input id="search-bar" onChange={onQueryChange} type="text" placeholder="Search Movies" />
         </div>
     );
 };
