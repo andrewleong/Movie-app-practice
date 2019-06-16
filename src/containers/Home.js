@@ -33,7 +33,7 @@ class Home extends Component {
     render() {
         const { movies } = this.state;
         return (
-            <div>
+            <div className="container">
                 <SearchBar
                     onSearch={this.handleSearch}
                 />

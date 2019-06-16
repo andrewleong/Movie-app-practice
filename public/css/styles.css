@@ -1,0 +1,60 @@
+body {
+    background-color: #1e2129;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+}
+
+input {
+    border-radius: 50px;
+    -webkit-appearance: none;
+    border: 1px solid #d6d6d6;
+    padding: 10px 30px;
+}
+
+*:focus { outline: none !important; box-shadow: none !important; }
+
+
+.modal h3, .modal h4 {
+    color: #fff;
+}
+
+.card-img-top {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+}
+
+.card-img-overlay {
+    margin: 10px 0;
+}
+
+span.badge {
+    margin-right: 5px;
+}
+
+
+p.card-text {
+    color: #fff;
+}
+
+.movie-item {
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: .25s box-shadow;
+    transition: .25s box-shadow;
+    margin-bottom: 20px;
+}
+
+.movie-item-container img {
+    max-height: 400px;
+}
+
+.movie-item-container {
+    /* padding: 20px 40px; */
+    max-width: 300px;
+    background: white;
+
+  }
