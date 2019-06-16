@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) MovieList render movie item props correctly 1`] = `
+Object {
+  "alt": "",
+  "children": Array [
+    <img
+      alt=""
+      src="https://image.tmdb.org/t/p/w300/1234"
+    />,
+    <h5>
+      Movie 1
+    </h5>,
+    <h6>
+      12-2-2019
+    </h6>,
+  ],
+  "className": "col-sm-12 movie-item-container",
+  "onClick": undefined,
+  "src": "https://image.tmdb.org/t/p/w300/1234",
+}
+`;
