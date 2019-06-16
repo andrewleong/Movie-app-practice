@@ -11,8 +11,13 @@ class MovieDetails extends Component {
 
     render() {
         return (
-            <div>
-
+            <div
+            style={{
+                display: `${this.props.showModal ? 'block' : 'none'}`,
+                backgroundColor: 'rgba(0,0,0,.8)'
+              }}
+            >
+                Modal Pop up
             </div>
         );
     }
