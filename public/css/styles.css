@@ -5,10 +5,11 @@ body {
 
 /* Search Bar */
 .search-bar {
+    padding: 35px 15px;
     text-align: center;
 }
 
-input.search-bar {
+input#search-bar {
     border-radius: 50px;
     -webkit-appearance: none;
     border: 1px solid #d6d6d6;

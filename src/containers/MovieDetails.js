@@ -52,8 +52,8 @@ class MovieDetails extends Component {
                                     <p className="card-text">Duration: {movie.runtime ? `${movie.runtime} min` : 'N/A'}</p>
                                     <p className="card-text">Popularity: {movie.popularity ? `${movie.popularity}` : 'N/A'}</p>
                                     <p className="card-text">Budget: $ {movie.budget}</p>
-                                    <p className="card-text">Genre: { movie.genres ? movie.genres.map(item => <span className="badge badge-info">{item.name}</span>) : 'N/A' }</p>
-                                    <p className="card-text">Production companies: { movie.production_companies ? movie.production_companies.map(item => <span className="badge badge-light">{item.name}</span>) : 'N/A' }</p>
+                                    <p className="card-text">Genre: { movie.genres ? movie.genres.map(item => <span key={item.id} className="badge badge-info">{item.name}</span>) : 'N/A' }</p>
+                                    <p className="card-text">Production companies: { movie.production_companies ? movie.production_companies.map(item => <span key={item.id} className="badge badge-light">{item.name}</span>) : 'N/A' }</p>
                                 </div>
                             </div>
                         </div>
