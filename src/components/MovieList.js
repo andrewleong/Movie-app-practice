@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Component imports
+import MovieItem from './MovieItem';
 
 const MovieList = ({ movieList=[] }) => {
 
@@ -8,7 +10,7 @@ const MovieList = ({ movieList=[] }) => {
             return movies.map( (item) => {
                 return (
                     <div key={item.id}>
-                        Movie Item
+                        <MovieItem />
                     </div>
                 )
             })
