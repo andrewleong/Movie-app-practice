@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SearchBarComponent = (props) => {
+const SearchBarComponent = ({ onQueryChange }) => {
     return (
         <div>
-            Test
+            <input onChange={onQueryChange} type="text" placeholder="Search Movies" />
         </div>
     );
 };

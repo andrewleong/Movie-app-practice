@@ -8,13 +8,24 @@ class SearchBar extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-
+            query: "",
         }
+    }
+
+    handleQueryChange = ({ target }) => {
+        const { value } = target;
+
+        this.setState({
+            query: value,
+        })
+
     }
 
     render() {
         return (
-            <SearchBarComponent />
+            <SearchBarComponent
+                onQueryChange={this.handleQueryChange}
+            />
         );
     }
 }
