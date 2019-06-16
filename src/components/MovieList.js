@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component imports
-import MovieItem from './MovieItem';
+import MovieItem from '../containers/MovieItem';
 
 const MovieList = ({ movieList=[] }) => {
 
