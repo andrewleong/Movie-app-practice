@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Component) MovieList renders correctly 1`] = `ShallowWrapper {}`;
+exports[`(Component) MovieList renders movieList correctly 1`] = `
+Object {
+  "movieList": Array [
+    Object {
+      "id": 1,
+      "title": "Movie 1",
+    },
+    Object {
+      "id": 2,
+      "title": "Movie 2",
+    },
+  ],
+}
+`;

@@ -24,10 +24,6 @@ describe('(Component) MovieList', () => {
         expect(wrapper).toHaveLength(1);
     });
 
-    it('renders correctly', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
-
     it('accepts movieList props', () => {
         const wrapper = mount(
             <MovieList
@@ -35,6 +31,15 @@ describe('(Component) MovieList', () => {
             />
         );
         expect(wrapper.props().movieList).toEqual(movies);
+    });
+
+    it('renders movieList correctly', () => {
+        const wrapper = mount(
+            <MovieList
+                movieList={movies}
+            />
+        );
+        expect(wrapper.props()).toMatchSnapshot();
     });
 
 });
