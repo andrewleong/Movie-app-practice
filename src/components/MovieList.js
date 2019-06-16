@@ -9,7 +9,7 @@ const MovieList = ({ movieList=[] }) => {
         if(movies.length){
             return movies.map( (item) => {
                 return (
-                    <div key={item.id}>
+                    <div className="movie-list-container" key={item.id}>
                         <MovieItem
                             movie={item}
                         />

@@ -30,7 +30,7 @@ class MovieItem extends Component {
         const { movie } = this.props;
         const { isModalOpen } = this.state;
         return (
-            <div key={movie.id} className="col-sm-12">
+            <div key={movie.id}>
 
                 <MovieDetails
                     movieDetails={movie}

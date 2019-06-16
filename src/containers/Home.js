@@ -33,13 +33,20 @@ class Home extends Component {
     render() {
         const { movies } = this.state;
         return (
-            <div>
+            <div className="container">
                 <SearchBar
                     onSearch={this.handleSearch}
                 />
-                <MovieList
-                    movieList={movies}
-                />
+
+                {
+                    movies.length === 0 ?
+                        <h1>Please do a search.</h1> :
+                        <MovieList
+                            movieList={movies}
+                        />
+                }
+
+
             </div>
         );
     }

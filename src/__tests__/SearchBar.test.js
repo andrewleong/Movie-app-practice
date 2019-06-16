@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import SearchBarComponent from '../components/SearchBarComponent';
+import SearchBarComponent from '../components/SearchBar';
 import SearchBar from '../containers/SearchBar';
 
 
