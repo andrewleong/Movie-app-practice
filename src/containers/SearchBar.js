@@ -9,6 +9,7 @@ class SearchBar extends Component {
         super(props, context);
         this.state = {
             query: "",
+            disabled: true,
         }
     }
 
@@ -17,7 +18,14 @@ class SearchBar extends Component {
 
         this.setState({
             query: value,
+            disabled: true
         })
+
+        if(value) {
+            this.setState({
+                disabled: false
+            })
+        }
 
     }
 
@@ -32,6 +40,7 @@ class SearchBar extends Component {
             <SearchBarComponent
                 onQueryChange={this.handleQueryChange}
                 onSearch={this.handleSearch}
+                disabled={this.state.disabled}
             />
         );
     }
