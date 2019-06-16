@@ -14,6 +14,11 @@ class MovieItem extends Component {
         }
     }
 
+    handleMovieClick = () => {
+        this.setState({
+            isModalOpen: true
+        })
+    }
 
     render() {
         const { movie } = this.props;
