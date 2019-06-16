@@ -3,6 +3,11 @@ body {
     background-color: #1e2129;
 }
 
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
 /* Search Bar */
 .search-bar {
     padding: 35px 15px;

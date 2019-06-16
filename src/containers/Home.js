@@ -37,9 +37,16 @@ class Home extends Component {
                 <SearchBar
                     onSearch={this.handleSearch}
                 />
-                <MovieList
-                    movieList={movies}
-                />
+
+                {
+                    movies.length === 0 ?
+                        <h1>Please do a search.</h1> :
+                        <MovieList
+                            movieList={movies}
+                        />
+                }
+
+
             </div>
         );
     }
