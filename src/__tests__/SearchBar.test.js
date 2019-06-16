@@ -9,4 +9,17 @@ describe('(Component) Search Bar', () => {
         expect(wrapper.find('input')).toHaveLength(1);
     });
 
+    it('should call onQueryChange while typing', () => {
+        const mock = jest.fn();
+        const value = "inception";
+        const wrapper = shallow(
+            <SearchBarComponent
+                onQueryChange={mock}
+            />
+        )
+
+        wrapper.find('#search-bar').simulate('change', null, value)
+        expect(mock).toBeCalledWith(null, value);
+    })
+
 });
