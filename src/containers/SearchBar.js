@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Component imports
-import SearchBarComponent from '../components/SearchBarComponent';
+import SearchBarComponent from '../components/SearchBar';
 
 
 class SearchBar extends Component {
