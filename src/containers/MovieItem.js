@@ -20,6 +20,12 @@ class MovieItem extends Component {
         })
     }
 
+    handleToggleModal = () => {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        })
+    }
+
     render() {
         const { movie } = this.props;
         const { isModalOpen } = this.state;
