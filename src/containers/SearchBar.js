@@ -21,10 +21,17 @@ class SearchBar extends Component {
 
     }
 
+    handleSearch = () => {
+        const { query } = this.state;
+        const { onSearch } = this.props;
+        if(onSearch) onSearch(query);
+    }
+
     render() {
         return (
             <SearchBarComponent
                 onQueryChange={this.handleQueryChange}
+                onSearch={this.handleSearch}
             />
         );
     }
