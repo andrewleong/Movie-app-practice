@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// Container imports
+import SearchBar from './SearchBar';
 
 class Home extends Component {
     constructor(props) {
@@ -12,7 +14,9 @@ class Home extends Component {
     render() {
         return (
             <div>
-                Testing
+                <SearchBar
+
+                />
             </div>
         );
     }
