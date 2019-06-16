@@ -13,7 +13,14 @@ describe('(Container) Home', () => {
         expect(wrapper.find('SearchBar')).toHaveLength(1);
     });
 
-    it('should render a <MovieList />', () => {
+    it('should render a <MovieList /> if movies are found', () => {
+        const movies = [
+            {
+                id: 1,
+                name: "movie 1"
+            }
+        ]
+        wrapper.setState({ movies })
         expect(wrapper.find('MovieList')).toHaveLength(1);
     });
 });
