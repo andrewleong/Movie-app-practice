@@ -8,7 +8,6 @@ h1 {
     text-align: center;
 }
 
-/* Search Bar */
 .search-bar {
     padding: 35px 15px;
     text-align: center;
@@ -34,6 +33,10 @@ input#search-bar {
     box-shadow: none !important;
 }
 
+.modal {
+    background-color: rgba(0,0,0,.8);
+}
+
 .modal h3, .modal h4 {
     color: #fff;
     margin-bottom: 10px;
@@ -56,7 +59,6 @@ input#search-bar {
 span.badge {
     margin-right: 5px;
 }
-
 
 p.card-text {
     color: #fff;

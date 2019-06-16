@@ -27,16 +27,11 @@ class MovieDetails extends Component {
         const { movie } = this.state;
         return (
             <div
-            onClick={this.hideModal} className={`modal fade movie-modal ${this.props.showModal ? 'show' : ''}`}
-            style={{
-                display: `${this.props.showModal ? 'block' : 'none'}`,
-                backgroundColor: 'rgba(0,0,0,.8)'
-            }}
-            id="movie-modal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
+                onClick={this.hideModal} className={`modal fade ${this.props.showModal ? 'show' : ''}`}
+                style={{ display: `${this.props.showModal ? 'block' : 'none'}` }}
+                tabIndex="-1" role="dialog" aria-hidden="true"
             >
-
                 <MovieDetailsComponent movie={movie} toggleModal={this.props.toggleModal} />
-
           </div>
         );
     }
