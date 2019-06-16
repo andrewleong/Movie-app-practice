@@ -75,6 +75,7 @@ p.card-text {
 }
 
 .movie-item-container {
+    cursor: pointer;
     max-width: 280px;
     padding: 10px;
     margin: 20px;
